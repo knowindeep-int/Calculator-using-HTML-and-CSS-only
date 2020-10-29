@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Calculator</title>
+<link type="text/CSS" href="CSS/calci.css" rel="stylesheet">
+
+</head>
+
+<body><h1>Calculator</h1>
+<h2>--Using HTML and CSS only</h2>
+</body>
+
+
+<form name="form1" class="cal" action="calculator.html" method="post">
+<input type="text" name="answer" id="layout">
+<br>
+<br>
+<input type="button" class="btnstyle" value="C" onclick="form1.answer.value=''">
+<input type="button" class="btnstyle" value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)">
+<input type="button" class="btnstyle" value="00" onclick="form1.answer.value+='00'">
+<input type="button" class="operator" value="/" onclick="form1.answer.value+='/'">
+<br>
+<br>
+<input type="button" class="btnstyle" value="7" onclick="form1.answer.value+='7'">
+<input type="button" class="btnstyle" value="8" onclick="form1.answer.value+='8'">
+<input type="button" class="btnstyle" value="9" onclick="form1.answer.value+='9'">
+<input type="button" class="operator" value="*" onclick="form1.answer.value+='*'">
+<br>
+<br>
+<input type="button" class="btnstyle" value="4" onclick="form1.answer.value+='4'">
+<input type="button" class="btnstyle" value="5" onclick="form1.answer.value+='5'">
+<input type="button" class="btnstyle" value="6" onclick="form1.answer.value+='6'">
+<input type="button" class="operator" value="-" onclick="form1.answer.value+='-'"> 
+<br>
+<br>
+<input type="button" class="btnstyle" value="1" onclick="form1.answer.value+='1'">
+<input type="button" class="btnstyle" value="2" onclick="form1.answer.value+='2'">
+<input type="button" class="btnstyle" value="3" onclick="form1.answer.value+='3'">
+<input type="button" class="operator" value="+" onclick="form1.answer.value+='+'">
+<br>
+<br>
+<input type="button" id="zero" value="0" onclick="form1.answer.value+='0'">
+<input type="button" class="btnstyle" value="." onclick="form1.answer.value+='.'">
+<input type="button" class="operator" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+
+
+</form>
+</html>
